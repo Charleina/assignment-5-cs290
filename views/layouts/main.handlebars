@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Twits - {{name}}</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" crossorigin= "anonymous">
+    <link rel="stylesheet" href="/style.css" media = "screen">
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script src="/twit.js" charset="utf-8" defer></script>
+
+    <script src="/index.js" charset="utf-8" defer></script>
+    
+  </head>
+  <body>
+ <header>
+      <!-- The <i> tag below includes the bullhorn icon from Font Awesome -->
+      <a href="#"><h1 class="site-title"><i class="far fa-hand-lizard"></i> tweeter</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <li class="navitem navlink active"><a href="#">Home</a></li>
+          <li class="navitem navlink"><a href="#">Trending</a></li>
+          <li class="navitem navlink"><a href="#">People</a></li>
+          <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+{{{body}}}
+
+
+  </body>
+</html>
